@@ -86,5 +86,13 @@ public class AscensorTest {
         assertEquals("El ascensor se movio hacia abajo 1 pisos", resultado);
 
     }
-    
+
+    @Test
+    public void VerificarPisoAleatorio(){
+        Ascensor asc = new Ascensor();
+        Persona per = asc.crearPersona();
+        String resultado = asc.movimiento(per);
+        assertEquals("El ascensor se movio hacia arriba 1 pisos", resultado);
+    }
+
 }
